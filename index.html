@@ -9,21 +9,42 @@
 </head>
 <body>
     <div class="content">
-        <div class="left">Left</div>
-            <div class="center">
+        <div class="left"></div>
+            <div class="center"> 
+                <div class="menu">
+                    <div class="menu-left">
+                        <div>Reset Game</div>
+                    </div>
+                    <div class="title">
+                        tic-tac-toe<br>[ 2 player alternate - best of 3]
+                    <br>
+                    </div>
+                <div class="menu-right">Edit Player Name</div>
+                </div>
+                
                 <div class="main-box">
-                    <div class="square" id="00"></div>
-                    <div class="square"  id="01"></div>
-                    <div class="square"  id="02"></div>
-                    <div class="square"  id="10"></div>
-                    <div class="square"  id="11"></div>
-                    <div class="square"  id="12"></div>
-                    <div class="square"  id="20"></div>
-                    <div class="square"  id="21"></div>
-                    <div class="square"  id="22"></div>
+                    <div class="square" id="0^0"></div>
+                    <div class="square"  id="0^1"></div>
+                    <div class="square"  id="0^2"></div>
+                    <div class="square"  id="1^0"></div>
+                    <div class="square"  id="1^1"></div>
+                    <div class="square"  id="1^2"></div>
+                    <div class="square"  id="2^0"></div>
+                    <div class="square"  id="2^1"></div>
+                    <div class="square"  id="2^2"></div>
+                </div>
+                <div class="result">
+                    <div class="headings">
+<div id="h-p1"></div><div id="h-tie">Tie</div><div id="h-p2"></div>
+                    </div>
+                    <div class="scores"> 
+<div id="s-p1"></div><div id="s-tie"></div><div id="s-p2"></div>
+                    </div>    
+                    <div class="final-score"></div>    
+                    
                 </div>
             </div>
-        <div class="right">right</div>
+        <div class="right"></div>
     </div>
 </body>
 </html>

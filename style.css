@@ -1,5 +1,8 @@
 body {
     box-sizing: border-box;
+    background-color: #EEEFE0;
+    color: #819A91;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .content {
@@ -12,39 +15,86 @@ body {
 .left, .right {
     width: 20%;
     display: flex;
-    /* border:  2px;
-    border-color: blue;
-    background-color: aquamarine; */
+    background-color: #D1D8BE; 
+    
 }
 
 .center {
     width: 60vw;
     height: 100vh;
     display: flex;
-    /* border: 2px;
-    border-color: brown;
-    background-color: chartreuse; */
     justify-content: center;
     align-content: center;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 5px;
 }
 
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-left, .menu-right{
+    display: flex;
+    font-size: smaller;
+    width: 20%;
+}
+
+
+.menu-left {
+    justify-content: start;
+    align-items: center;
+}
+
+.menu-right {
+    justify-self: end;
+    align-items: center;
+}
+
+.title {
+    width: 60%;
+    display: flex;
+}
+.title, .result {
+    
+    align-content: center;
+    justify-content: center;
+}
 .main-box {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     align-self: center;
     justify-self: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    /* border: 3px;
-    border-style: groove;
-    border-color: blueviolet; */
+ 
 }
 
 .square {
     border: 3px;
-    border-style: groove;
-    border-color: blue;
-    
+    border-style:solid;
+    border-color: #819A91;
+    font-size: 72px;
+    text-align: center;
+}
+
+.result {
+    margin: 20px;    
+    display: flex;
+    flex-direction: column;    
+}
+
+.headings, .scores {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.final-score {
+    display: flex;
+    width: inherit;
+    justify-content: center;
 }
